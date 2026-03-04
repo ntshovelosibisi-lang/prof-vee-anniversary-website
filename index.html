@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleared For Love</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 100px 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1.5s ease;
+}
+
+img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Floating Stars */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+
+.stars::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow:
+        200px 300px white,
+        400px 600px white,
+        600px 200px white,
+        800px 500px white,
+        1000px 300px white,
+        1200px 700px white;
+    animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="startScreen" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    text-align: center;
+">
+    <h1>Our Forever ❤️</h1>
+    <button onclick="startExperience()" style="
+        padding: 15px 30px;
+        font-size: 18px;
+        background: white;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+    ">
+        Tap to Begin
+    </button>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="TillDeathDoUsApart.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startExperience() {
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("bgMusic").play();
+}
+</script>
+
+<div class="stars"></div>
+
+<section>
+<h1>Where everything started ✈️</h1>
+<h2>Prof & Vee</h2>
+<p>
+365 days of loving you mufunwa wanga.<br>
+It all started like a joke —<br>
+and it keeps getting better.
+</p>
+
+<p>
+<br>
+I remember getting lost during Mitchell's Plain festival, and the only reference I knew was
+the SAAF tent. I bumped into this shy, tall, dark and handsome guy.<br>
+"Please show me what you guys do in this tent"; I said.<br>
+OOOOH! The guy was shy and asked someone to take  me through.<br>
+<br>
+Was I even listening? "Hell Nah"<br>
+The only thing that was on my mind was the handsome guy who was standing outside holding my plastic.<br>
+After finding out that he's also from Limpopo, my heart skipped a beat.<br>
+Got back to my tent and told everyone that I've met my SOULMATE. Little did I know that I was manisesting.<br>
+<br>
+We exchanged numbers...
+<img src="pic31.jpeg" alt="Us together">
+</section>
+
+<section>
+<h2>First Memory</h2>
+<p>
+16 March 2025 — the day everything changed.
+I didn't know then that I was meeting the man who would become my calm in chaos,
+ my steady wing in turbulence, 
+my favourite person.
+</p>
+<img src="pic25.jpeg" alt="First memory">
+<img src="pic26.jpeg" alt="First memory">
+
+</section>
+
+<section>
+<h2>Growing together</h2>
+<p>
+Slowly, gently, we grew.<br>
+Not rushed. Not forced.<br>
+Just two hearts choosing each other.
+</p>
+<img src="pic6.jpeg" alt="Growing together">
+
+<p>
+In laughter.<br>
+In silence.<br>
+In deep conversations at night.
+</p>
+<img src="pic13.jpeg" alt="Growing together">
+
+<p>
+You became my comfort.<br>
+And I became yours.
+</p>
+<img src="pic24.jpeg" alt="Growing together">
+</section>
+
+<section>
+<h2>Turbulence</h2>
+<p>
+Not every flight is smooth.<br>
+But every time life tested us,<br>
+we held on instead of letting go.
+</p>
+<img src="pic11.jpeg" alt="Strong together">
+</section>
+
+<section>
+<h2>My Safe Landing</h2>
+<p>
+Prof,<br>
+Loving you has been the most beautiful journey of my life.
+</p>
+
+<p>
+You are soft in a world that teaches men to be hard.<br>
+You love deeply, intentionally, gently.<br>
+</p>
+
+<p>
+Watching you chase the skies inspires me.<br>
+</p>
+
+<p>
+But beyond the aircraft —<br>
+you are my peace.<br>
+My answered prayer.<br>
+My safe landing.<br>
+</p>
+
+<p>
+If this year felt like this...<br>
+I can't wait to see what forever feels like with you.<br>
+</p>
+
+<p>
+Happy First Anniversary.<br>
+</p>
+
+<p>
+I would choose you in every lifetime.
+</p>
+<img src="pic17.jpeg" alt="My forever">
+<img src="pic7.jpeg" alt="My Forever">
+<img src="pic10.jpeg" alt="My Forever">
+<img src="pic15.jpeg" alt="My Forever">
+<img src="pic8.jpeg" alt="My forever">
+<img src="pic12.jpeg" alt="My Forever">
+<img src="pic2.jpeg" alt="My Forever">
+
+
+</section>
+
+<section>
+<h2>Next Destination</h2>
+<p>
+From this day forward, I see us walking  hand in hand through every joy and challenge.<br>
+I pray that our hearts remain one, our love unshaken, and our dreams intertwined.<br>
+Together, we will build a life filled with laughter, trust, and endless adventures.<br>
+I see a future where we grow stronger, inspire each other everyday, and create a love story that shines brighter than the stars.<br>
+I love you tons Daddy.<br>
+</p>
+<img src="pic1.jpeg" alt="Muthu wanga">
+<img src="pic22.jpeg" alt="Muthu wanga">
+
+
+<br>
+
+Cheers to:<br>
+<br>
+-Our love<br>
+-Our future family<br>
+-More anniversaries<br>
+-Shared dreams<br>
+-A lifetime of choosing each other<br>
+-Soaring in your skies as a pilot while  I map the world as a GIS Software developer!
+
+</p>
+<img src="pic30.jpeg" alt="Muthu Wanga">
+<img src="pic20.jpeg" alt="Muthu Wanga">
+<img src="pic18.jpeg" alt="Muthu Wanga">
+<img src="pic23.jpeg" alt="Muthu Wanga">
+<img src="pic29.jpeg" alt="Muthu Wanga">
+<img src="pic5.jpeg" alt="Muthu Wanga">
+<img src="pic4.jpeg" alt="Muthu Wanga">
+<img src="pic3.jpeg" alt="Muthu Wanga">
+<img src="pic32.jpeg" alt="Muthu Wanga">
+<img src="pic33.jpeg" alt="Muthu Wanga">
+
+</section>
+
+<script>
+const sections = document.querySelectorAll("section");
+const images = document.querySelectorAll("img");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < window.innerHeight - 100) {
+            section.classList.add("visible");
+        }
+    });
+
+    images.forEach(img => {
+        const imgTop = img.getBoundingClientRect().top;
+        if(imgTop < window.innerHeight - 100) {
+            img.classList.add("visible");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
